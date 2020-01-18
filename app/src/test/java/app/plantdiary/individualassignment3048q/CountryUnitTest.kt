@@ -26,12 +26,6 @@ class CountryUnitTest {
 
     }
 
-
-    @Test
-    fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
-    }
-
     @Test
     fun countryDTO_maintainsState() {
         var country = Country("NZ", "New Zealand")
@@ -71,6 +65,12 @@ class CountryUnitTest {
 
     private fun thenResultsShouldContainBelize() {
         var containsBelize:Boolean = false
-
-    }
+        mvm.countries.observeForever {
+            it.forEach {
+                if (it.name.equals("Belize")) {
+                    containsBelize = true
+                }
+            }
+            assertTrue(containsBelize)
+        }    }
 }
