@@ -10,9 +10,11 @@ import org.junit.Rule
 import org.junit.rules.TestRule
 
 /**
- * Example local unit test, which will execute on the development machine (host).
- *
- * See [testing documentation](http://d.android.com/tools/testing).
+ * Test the country logic.
+ * Validate that the DTO works as expected.
+ * Validate the format of the DTO string.
+ * Validate that the fetch contains a minimum number of records.
+ * Validate that "Belize" is one of the countries returned.
  */
 class CountryUnitTest {
 
@@ -34,6 +36,12 @@ class CountryUnitTest {
     }
 
     @Test
+    fun countryDTO_toStringFormat() {
+        var country = Country("NZ", "New Zealand")
+        assertTrue(country.toString().equals("New Zealand NZ"))
+    }
+
+    @Test
     fun countryDTO_isPopulated() {
         givenViewModelIsInitialized()
         whenJSONDataAreReadAndParsed()
@@ -50,9 +58,10 @@ class CountryUnitTest {
 
     private fun thenTheCollectionSizeShouldBeGreaterThanZero() {
         mvm.countries.observeForever{
-            assertNotNull(it)
-            assertTrue(it.size > 0)
         }
+        Thread.sleep(10000)
+        assertNotNull(it)
+        assertTrue(it.size > 0)
     }
 
 
@@ -72,5 +81,6 @@ class CountryUnitTest {
                 }
             }
             assertTrue(containsBelize)
-        }    }
+        }
+    }
 }
