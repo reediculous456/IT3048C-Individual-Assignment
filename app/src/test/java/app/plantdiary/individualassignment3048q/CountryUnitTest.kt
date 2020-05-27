@@ -59,7 +59,7 @@ class CountryUnitTest {
     private fun thenTheCollectionSizeShouldBeGreaterThanZero() {
         mvm.countries.observeForever{
         }
-        Thread.sleep(10000)
+        Thread.sleep(5000)
         assertNotNull(it)
         assertTrue(it.size > 0)
     }
