@@ -57,11 +57,13 @@ class CountryUnitTest {
     }
 
     private fun thenTheCollectionSizeShouldBeGreaterThanZero() {
+        var allCountries = ArrayList<Country>()
         mvm.countries.observeForever{
+            allCountries = it
         }
         Thread.sleep(5000)
-        assertNotNull(it)
-        assertTrue(it.size > 0)
+        assertNotNull(allCountries)
+        assertTrue(allCountries.size > 0)
     }
 
 
