@@ -1,6 +1,7 @@
 package app.plantdiary.individualassignment3048q
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
+import app.plantdiary.individualassignment3048q.dto.Country
 import app.plantdiary.individualassignment3048q.ui.main.MainViewModel
 import org.junit.Test
 
@@ -30,14 +31,20 @@ class CountryUnitTest {
 
     @Test
     fun countryDTO_maintainsState() {
-        var country = Country("NZ", "New Zealand")
+        var country = Country(
+            "NZ",
+            "New Zealand"
+        )
         assertTrue(country.code.equals("NZ") )
         assertTrue(country.name.equals("New Zealand"))
     }
 
     @Test
     fun countryDTO_toStringFormat() {
-        var country = Country("NZ", "New Zealand")
+        var country = Country(
+            "NZ",
+            "New Zealand"
+        )
         assertTrue(country.toString().equals("New Zealand NZ"))
     }
 
