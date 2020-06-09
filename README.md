@@ -9,7 +9,7 @@
 * Implement retrofit
   - [ ] Libraries in build.gradle  __/10
   - [ ] RetrofitClientInstance  __ /10
-  - [ ] Consume the endpoint of country data described [here]( http://jsonservices.com/cgi-bin/services.pl?search=List+of+Countries)  __/10
+  - [ ] Consume the endpoint of country data described [here](http://jsonservices.com/cgi-bin/services.pl?search=List+of+Countries)  __/10
 * Test
   - [ ] Make no modifications. All tests pass  __/10
 * GitHub
