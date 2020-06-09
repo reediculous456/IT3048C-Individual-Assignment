@@ -5,6 +5,6 @@ import retrofit2.Call
 import retrofit2.http.GET
 
 interface ICountryDAO {
-    @GET("/country-list/r/data.json")
+    @GET("country-list/r/data.json")
     fun getAllCountries(): Call<ArrayList<Country>>
 }
