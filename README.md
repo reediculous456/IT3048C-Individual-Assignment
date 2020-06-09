@@ -3,7 +3,7 @@
 ## Tasks
 * Create DTO
   - [ ] Parameters in constructor, with proper GSON annotations to map to JSON stream  __/10
-  - [ ] Override toString; produce data in the format CountryName CountryCode (example: United States US)  __ /10
+  - [x] Override toString; produce data in the format CountryName CountryCode (example: United States US)  __ /10
 * create ViewModel
   - [ ] ViewModel is properly accessed from fragment; the autocomplete populates with country names when run  __ /10
 * Implement retrofit
