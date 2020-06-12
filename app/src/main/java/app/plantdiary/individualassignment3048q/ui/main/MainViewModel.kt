@@ -10,6 +10,10 @@ class MainViewModel : ViewModel() {
     var countries: MutableLiveData<ArrayList<Country>> = MutableLiveData<ArrayList<Country>>()
     private val countryService: CountryService = CountryService()
 
+    init {
+        fetchCountries()
+    }
+
     fun fetchCountries(): Unit {
         countries = countryService.fetchCountries()
     }
