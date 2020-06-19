@@ -13,7 +13,7 @@ class CountryService {
         var countries = MutableLiveData<ArrayList<Country>>()
         val service = RetrofitClientInstance.retrofitInstance?.create(ICountryDAO::class.java)
         val call = service?.getAllCountries()
-        call?.enqueue(object: Callback<ArrayList<Country>> {
+        call?.enqueue(object : Callback<ArrayList<Country>> {
             override fun onFailure(call: Call<ArrayList<Country>>, t: Throwable) {
                 TODO("Not yet implemented")
             }

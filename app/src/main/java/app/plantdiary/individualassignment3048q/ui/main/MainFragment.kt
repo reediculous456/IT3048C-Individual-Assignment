@@ -92,7 +92,14 @@ class MainFragment : Fragment() {
         if (mapReady && country != null) {
             val location = getLocationFromAddress(context, country.name)
             if (location != null) {
-                mMap.moveCamera(CameraUpdateFactory.newLatLng(LatLng(location.latitude, location.longitude)))
+                mMap.moveCamera(
+                    CameraUpdateFactory.newLatLng(
+                        LatLng(
+                            location.latitude,
+                            location.longitude
+                        )
+                    )
+                )
             }
         }
     }
