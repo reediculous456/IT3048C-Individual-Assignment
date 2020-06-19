@@ -3,6 +3,7 @@ package app.plantdiary.individualassignment3048q
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import app.plantdiary.individualassignment3048q.ui.main.MainFragment
+import app.plantdiary.individualassignment3048q.ui.main.MapsFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,4 +17,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    internal fun onOpenMap() {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.container, MapsFragment())
+            .commitNow()
+    }
 }

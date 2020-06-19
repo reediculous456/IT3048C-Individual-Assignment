@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import androidx.lifecycle.Observer
+import app.plantdiary.individualassignment3048q.MainActivity
 import app.plantdiary.individualassignment3048q.R
 import kotlinx.android.synthetic.main.main_fragment.*
 
@@ -33,6 +34,10 @@ class MainFragment : Fragment() {
             countries -> actCountry.setAdapter(ArrayAdapter(context!!, R.layout.support_simple_spinner_dropdown_item, countries))
         })
         viewModel.fetchCountries()
+
+        btnMap.setOnClickListener {
+            (activity as MainActivity).onOpenMap()
+        }
     }
 
 }
