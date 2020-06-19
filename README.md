@@ -15,6 +15,7 @@
 * GitHub
   - [x] Setup CircleCI to automatically run unit tests  __/10
 * Other
-  - [ ] Did something extra; not listed here  __/10
+  - [x] Did something extra; not listed here  __/10
     * What did you do?  Must list to get credit
-  - [ ] Code in good form, properly formatted and commented  __/10
+      * Added a Google Maps fragment that zooms to the country selected in the autocomplete
+  - [x] Code in good form, properly formatted and commented  __/10
