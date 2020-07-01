@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitClientInstance {
     private var retrofit: Retrofit? = null
-    private val BASE_URL = "https://datahub.io/core/"
+    private const val BASE_URL = "https://datahub.io/core/"
 
     val retrofitInstance: Retrofit?
         get() {
