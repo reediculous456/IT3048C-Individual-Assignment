@@ -1,7 +1,7 @@
 package app.plantdiary.individualassignment3048q
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import app.plantdiary.individualassignment3048q.ui.main.MainFragment
 
 class MainActivity : AppCompatActivity() {
@@ -15,5 +15,4 @@ class MainActivity : AppCompatActivity() {
                 .commitNow()
         }
     }
-
 }
