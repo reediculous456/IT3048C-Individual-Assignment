@@ -1,4 +1,4 @@
-# IT3038C Individual Assignment [![CircleCI](https://circleci.com/gh/uc-soit/individual-assignment-3048-q-updated-unit-test-reediculous456.svg?style=svg&circle-token=f5e88c8a139f04990daa939abe54aac01858d548)](https://app.circleci.com/pipelines/github/uc-soit/individual-assignment-3048-q-updated-unit-test-reediculous456)
+# IT3038C Individual Assignment [![CircleCI](https://circleci.com/gh/reediculous456/IT3048C-Individual-Assignment/tree/master.svg?style=svg)](https://circleci.com/gh/reediculous456/IT3048C-Individual-Assignment/tree/master)
 
 ## Tasks
 * Create DTO
